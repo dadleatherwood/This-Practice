@@ -74,3 +74,7 @@ function Car(maker, model, year) {
 }
 
 var prius = new Car('Toyota', 'Prius', 2011);
+var mustang = new Car('Ford', 'Mustang', 2013);
+
+prius.moveCar(10);
+mustang.moveCar(10);
