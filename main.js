@@ -11,7 +11,7 @@ function init (event) {
 
 var app =
 {
-  init: init;
+  init: init,
 }
 
 document.addEventListener('DOMContentLoaded', app.init);
@@ -47,3 +47,30 @@ Book.prototype.changeTitle = function(newTitle) {
 
 var book = new Book('The Brothers K', "David James Dunkin");
 book.changeAuthor('Steven');
+
+
+var user =
+  {
+    username: 'jacobleatherwood',
+    email:  'jacobleatherwood@email.com',
+    getUsername : function() {
+      return this.username;
+    }
+  }
+
+getUsername(user);
+
+function Car(maker, model, year) {
+  this.maker = maker;
+  this.model = model;
+  this.year = year;
+  this.miles = 0;
+
+  this.headline = this.maker + this.model;
+
+  this.moveCar = function (distance) {
+    this.miles += distance;
+  }
+}
+
+var prius = new Car('Toyota', 'Prius', 2011);
