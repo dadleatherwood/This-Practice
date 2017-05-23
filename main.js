@@ -41,4 +41,9 @@ Book.prototype.changeAuthor = function(newAuthor) {
   this.author = newAuthor;
 }
 
+Book.prototype.changeTitle = function(newTitle) {
+  this.title = newTitle;
+}
+
 var book = new Book('The Brothers K', "David James Dunkin");
+book.changeAuthor('Steven');
